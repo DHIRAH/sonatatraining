@@ -1,5 +1,7 @@
 package com.sonata2;
 
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
@@ -8,6 +10,8 @@ import com.sonata.Main.EmpExcut;
 import com.sonata.Model.Employee;
 
 public class CalTest {
+	Calculator c1 =new Calculator();
+
 	
 	@Test
 	public void addTest( ) {
@@ -74,4 +78,5 @@ public class CalTest {
 		EmpImpl e2 = new  EmpImpl();
 		Assertions.assertEquals(5000,e2.appSal(e1));
 }
+	
 }
